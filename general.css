@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --Violet: #674baf;
+  --Soft-Magenta: #e882e8;
+}
+
+/*GLOBAL RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #674baf;
+}
+html {
+  font-size: 62.5%;
+}

@@ -1,0 +1,129 @@
+:root {
+  --Violet: #674baf;
+  --Soft-Magenta: #e882e8;
+}
+.centered {
+  margin: 0 auto;
+}
+.container {
+  max-width: 144rem;
+  height: 100vh;
+  background: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.2rem;
+}
+
+.main-nav {
+  margin-bottom: 10rem;
+}
+
+.content {
+  display: flex;
+  gap: 5.2rem;
+}
+
+.main-heading {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 3.2rem;
+}
+.description-text {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.cta:link,
+.cta:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #674baf;
+  background-color: #fff;
+  margin-bottom: 4.8rem;
+  padding: 1.2rem 5.2rem;
+  font-size: 2.4rem;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+.cta:hover,
+.cta:active {
+  color: #fff;
+  background-color: #e882e8;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.icon-box {
+  color: #fff;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+.icon-box:hover,
+.icon-box:active {
+  color: #e882e8;
+  border: 2px solid #e882e8;
+}
+
+@media (width < 40rem) {
+  .container {
+    background: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  .logo {
+    width: 10rem;
+  }
+
+  .main-nav {
+    margin-bottom: 5.2rem;
+  }
+  .mockup {
+    margin-bottom: 4.8rem;
+    max-width: 29.6rem;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 2.4rem;
+  }
+  .description-text {
+    font-size: 1.6rem;
+  }
+  .cta:link,
+  .cta:visited {
+    font-size: 1.6rem;
+  }
+  .footer-nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+}
